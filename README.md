@@ -61,3 +61,23 @@ The ``student_name.setter`` decorator allows the user to set __name indirectly.
 ```
 student_obj.student_name = "alex"
 # sets student_obj.__name to "alex"
+
+
+Other uses can be to change related attributes at the same time, for example the radius and diameter of a circle. 
+
+```
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    
+    @property
+    def diameter(self):
+        return self.radius * 2
+
+    @diameter.setter
+    def diameter(self, new_diameter):
+        self.radius = new_diameter/2
+```
+
+Changing radius will automatically alter diameter, and vice versa
