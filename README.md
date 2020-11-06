@@ -61,7 +61,7 @@ The ``student_name.setter`` decorator allows the user to set __name indirectly.
 ```
 student_obj.student_name = "alex"
 # sets student_obj.__name to "alex"
-
+```
 
 Other uses can be to change related attributes at the same time, for example the radius and diameter of a circle. 
 
