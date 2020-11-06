@@ -1,5 +1,7 @@
 # Object Oriented Programming
 
+### Superclasses and Subclasses
+
 **Step 1**
 - Create an animal class as our parent
 
